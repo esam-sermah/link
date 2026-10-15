@@ -1,0 +1,15 @@
+[options]
+; إعدادات تشغيل Odoo 20 لمنصة LINK SaaS والربط مع الواتساب
+addons_path = /home/esam/PycharmProjects/odoo20/odoo20/odoo-20/addons,/home/esam/PycharmProjects/odoo20/odoo20/odoo-20/custom_addons
+data_dir = /home/esam/.local/share/Odoo
+admin_passwd = admin_secret_password_2026
+db_host = 127.0.0.1
+db_port = 5433
+db_user = esam_odoo20
+db_password = 123
+db_name = odoo20
+http_port = 8020
+xmlrpc_port = 8020
+longpolling_port = 8072
+workers = 0
+log_level = info

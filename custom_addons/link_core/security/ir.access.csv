@@ -1,0 +1,21 @@
+id,name,model_id,group_id/id,operation,domain
+access_link_tenant_manager,All Tenants Admin,link.tenant,link_core.group_link_manager,crud,
+access_link_tenant_user,Tenant User Own,link.tenant,link_core.group_link_user,cru,"[('id','=',user.tenant_id.id)]"
+access_link_catalog_manager,All Catalogs Admin,link.service.catalog,link_core.group_link_manager,crud,
+access_link_catalog_user,Catalog User Own,link.service.catalog,link_core.group_link_user,crud,"[('tenant_id','=',user.tenant_id.id)]"
+access_link_attribute_manager,All Attributes Admin,link.service.attribute,link_core.group_link_manager,crud,
+access_link_attribute_user,Attribute User,link.service.attribute,link_core.group_link_user,crud,
+access_link_requirement_manager,All Requirements Admin,link.service.requirement,link_core.group_link_manager,crud,
+access_link_requirement_user,Requirement User,link.service.requirement,link_core.group_link_user,crud,
+access_link_avail_rule_manager,All Avail Rules Admin,link.service.availability.rule,link_core.group_link_manager,crud,
+access_link_avail_rule_user,Avail Rule User,link.service.availability.rule,link_core.group_link_user,crud,
+access_link_price_rule_manager,All Price Rules Admin,link.service.price.rule,link_core.group_link_manager,crud,
+access_link_price_rule_user,Price Rule User,link.service.price.rule,link_core.group_link_user,crud,
+access_link_request_manager,All Requests Admin,link.service.request,link_core.group_link_manager,crud,
+access_link_request_user,Request User Own,link.service.request,link_core.group_link_user,crud,"[('tenant_id','=',user.tenant_id.id)]"
+access_link_request_doc_manager,All Request Docs Admin,link.service.request.document,link_core.group_link_manager,crud,
+access_link_request_doc_user,Request Doc User Own,link.service.request.document,link_core.group_link_user,crud,"[('request_id.tenant_id','=',user.tenant_id.id)]"
+access_link_audit_log_manager,All Audit Logs Admin,link.service.audit.log,link_core.group_link_manager,crud,
+access_link_audit_log_user,Audit Log User Own,link.service.audit.log,link_core.group_link_user,r,"[('tenant_id','=',user.tenant_id.id)]"
+access_link_quick_reply_manager,All Quick Replies Admin,link.quick.reply,link_core.group_link_manager,crud,
+access_link_quick_reply_user,Quick Reply User Own,link.quick.reply,link_core.group_link_user,crud,"[('tenant_id','=',user.tenant_id.id)]"

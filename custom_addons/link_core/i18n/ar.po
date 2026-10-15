@@ -1,0 +1,1094 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* link_core
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-14 05:40+0000\n"
+"PO-Revision-Date: 2026-10-14 05:40+0000\n"
+"Last-Translator: LINK Platform Team\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#. module: link_core
+#: model:ir.module.category,name:link_core.module_category_link
+#: model:ir.ui.menu,name:link_core.menu_link_root
+msgid "LINK Platform"
+msgstr "منصة LINK"
+
+#. module: link_core
+#: model:ir.ui.menu,name:link_core.menu_link_operations
+msgid "Operations"
+msgstr "العمليات"
+
+#. module: link_core
+#: model:ir.actions.act_window,name:link_core.action_link_service_request
+#: model:ir.ui.menu,name:link_core.menu_link_service_request
+msgid "Chat Requests"
+msgstr "طلبات المحادثات"
+
+#. module: link_core
+#: model:ir.ui.menu,name:link_core.menu_link_catalog_root
+msgid "Catalog"
+msgstr "الكتالوج"
+
+#. module: link_core
+#: model:ir.actions.act_window,name:link_core.action_link_service_catalog
+#: model:ir.ui.menu,name:link_core.menu_link_service_catalog
+msgid "Services & Offers"
+msgstr "دليل الخدمات والعروض"
+
+#. module: link_core
+#: model:ir.ui.menu,name:link_core.menu_link_configuration
+msgid "Configuration"
+msgstr "إدارة المنصة"
+
+#. module: link_core
+#: model:ir.actions.act_window,name:link_core.action_link_tenant
+#: model:ir.ui.menu,name:link_core.menu_link_tenant
+msgid "Tenants"
+msgstr "المستأجرين والأنشطة التجارية"
+
+#. module: link_core
+#: model:res.groups,name:link_core.group_link_user
+msgid "Merchant Agent"
+msgstr "موظف متجر (Merchant Agent)"
+
+#. module: link_core
+#: model:res.groups,name:link_core.group_link_manager
+msgid "LINK Platform Administrator"
+msgstr "مدير منصة LINK (Administrator)"
+
+#. module: link_core
+#: model:ir.model,name:link_core.model_link_tenant
+#: model:ir.model.fields,field_description:link_core.field_link_service_catalog__tenant_id
+#: model:ir.model.fields,field_description:link_core.field_link_service_request__tenant_id
+#: model:ir.model.fields,field_description:link_core.field_link_service_audit_log__tenant_id
+#: model:ir.model.fields,field_description:link_core.field_link_quick_reply__tenant_id
+#: model:ir.model.fields,field_description:link_core.field_res_users__tenant_id
+msgid "Tenant"
+msgstr "النشاط التجاري (Tenant)"
+
+#. module: link_core
+#: model:ir.model,name:link_core.model_link_service_catalog
+#: model:ir.model.fields,field_description:link_core.field_link_service_attribute__catalog_id
+#: model:ir.model.fields,field_description:link_core.field_link_service_requirement__catalog_id
+#: model:ir.model.fields,field_description:link_core.field_link_service_availability_rule__catalog_id
+#: model:ir.model.fields,field_description:link_core.field_link_service_price_rule__catalog_id
+msgid "Service Catalog Entry"
+msgstr "خدمة في الكتالوج"
+
+#. module: link_core
+#: model:ir.model,name:link_core.model_link_service_request
+#: model:ir.model.fields,field_description:link_core.field_link_service_request_document__request_id
+msgid "Customer Business Request"
+msgstr "طلب محادثة وخدمة"
+
+#. module: link_core
+#: model:ir.model,name:link_core.model_link_service_attribute
+msgid "Service Dynamic Attribute"
+msgstr "خاصية ديناميكية للخدمة"
+
+#. module: link_core
+#: model:ir.model,name:link_core.model_link_service_requirement
+msgid "Service Mandatory Requirement and Document"
+msgstr "متطلب ومستند إلزامي للخدمة"
+
+#. module: link_core
+#: model:ir.model,name:link_core.model_link_service_price_rule
+msgid "Service Price Rule"
+msgstr "قاعدة سعر الخدمة"
+
+#. module: link_core
+#: model:ir.model,name:link_core.model_link_service_availability_rule
+msgid "Service Availability Rule"
+msgstr "قاعدة توفر الخدمة"
+
+#. module: link_core
+#: model:ir.model,name:link_core.model_link_service_request_document
+msgid "Service Request Document"
+msgstr "مستند مرفق بالطلب"
+
+#. module: link_core
+#: model:ir.model,name:link_core.model_link_service_audit_log
+msgid "Service Audit and Tool Call Log"
+msgstr "سجل تدقيق وحركات الخدمة"
+
+#. module: link_core
+#: model:ir.model,name:link_core.model_link_quick_reply
+msgid "Automated Quick Reply & Keyword Rule"
+msgstr "رد تلقائي وقاعدة كلمات مفتاحية"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__name
+msgid "Business Name"
+msgstr "اسم النشاط التجاري"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__code
+msgid "Unique Identifier (Slug)"
+msgstr "المعرف الفريد (Slug)"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__state
+msgid "Account Status"
+msgstr "حالة الحساب"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__phone
+msgid "Official WhatsApp Phone"
+msgstr "رقم الواتساب الرسمي"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__business_category
+msgid "Business Category"
+msgstr "تصنيف النشاط"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__currency_id
+msgid "Official Currency"
+msgstr "العملة الرسمية"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__bot_mode
+msgid "Bot Response Mode"
+msgstr "نمط الرد على الرسائل"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__welcome_message
+msgid "Initial Welcome Message"
+msgstr "رسالة الترحيب الأولى"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__welcome_button_1
+msgid "Button 1 (Offers & Catalog)"
+msgstr "الزر 1 (العروض والخدمات)"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__welcome_button_2
+msgid "Button 2 (AI Inquiry & Booking)"
+msgstr "الزر 2 (استفسار وحجز ذكي)"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__welcome_button_3
+msgid "Button 3 (Customer Support)"
+msgstr "الزر 3 (خدمة العملاء)"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__ai_provider
+msgid "AI Provider"
+msgstr "مزود الذكاء الاصطناعي"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__ai_model
+msgid "AI Model"
+msgstr "موديل الذكاء الاصطناعي"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__ai_api_key
+msgid "AI API Key"
+msgstr "مفتاح API الخاص بالذكاء الاصطناعي"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__ai_system_prompt
+msgid "Agent Persona & Style (System Prompt)"
+msgstr "شخصية وأسلوب الموظف (System Prompt)"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__ai_knowledge_base
+msgid "Business Knowledge Base & FAQs"
+msgstr "ملفات وتفاصيل النشاط التجاري (Knowledge Base)"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__quick_reply_ids
+msgid "Quick Replies & Rules"
+msgstr "الردود التلقائية والقواعد"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__catalog_ids
+msgid "Service Catalog"
+msgstr "دليل الخدمات"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__request_ids
+msgid "Requests"
+msgstr "الطلبات"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__service_count
+msgid "Services Count"
+msgstr "عدد الخدمات"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_tenant__request_count
+msgid "Total Requests"
+msgstr "إجمالي الطلبات"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_catalog__name
+msgid "Service / Offer Name"
+msgstr "اسم الخدمة / العرض"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_catalog__code
+msgid "Service Code (Slug / SKU)"
+msgstr "رمز الخدمة (Slug / SKU)"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_catalog__state
+msgid "Service Status"
+msgstr "حالة الخدمة"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_catalog__category
+msgid "Internal Category"
+msgstr "تصنيف الخدمة الداخلي"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_catalog__description
+msgid "Detailed Description & Policies"
+msgstr "الوصف التفصيلي والسياسات"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_catalog__pricing_type
+msgid "Pricing Type"
+msgstr "نوع التسعير"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_catalog__base_price
+msgid "Approved Base Price"
+msgstr "السعر الأساسي المعتمد"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_catalog__attribute_ids
+msgid "Required Attributes & Fields"
+msgstr "الخصائص والبيانات المطلوبة"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_catalog__requirement_ids
+msgid "Mandatory Documents & Requirements"
+msgstr "المستندات والشروط الإلزامية"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_catalog__availability_rule_ids
+msgid "Availability & Schedule Rules"
+msgstr "قواعد التوفر والمواعيد"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_catalog__price_rule_ids
+msgid "Price Rules & Addons"
+msgstr "قواعد وشروط الأسعار الإضافية"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_catalog__request_ids
+msgid "Customer Requests"
+msgstr "طلبات العملاء"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_catalog__request_count
+msgid "Bookings Count"
+msgstr "عدد الحجوزات"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request__name
+msgid "Request Number"
+msgstr "رقم الطلب"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request__partner_id
+msgid "Customer"
+msgstr "العميل"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request__partner_phone
+msgid "WhatsApp Phone"
+msgstr "رقم الواتساب"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request__service_id
+msgid "Requested Service"
+msgstr "الخدمة المطلوبة"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request__chatwoot_conversation_id
+msgid "Chatwoot Conversation ID"
+msgstr "معرف محادثة Chatwoot"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request__state
+msgid "Request Status"
+msgstr "حالة الطلب"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request__total_price
+msgid "Official Total Amount"
+msgstr "إجمالي القيمة الرسمية"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request__collected_data
+msgid "Collected Data (JSON)"
+msgstr "البيانات المستخرجة (JSON)"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request__document_ids
+msgid "Documents & Attachments"
+msgstr "المستندات والمرفقات"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request__audit_log_ids
+msgid "Audit & Action Logs"
+msgstr "سجل التدقيق والحركات"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request__reviewed_by
+msgid "Reviewed By"
+msgstr "تمت المراجعة بواسطة"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request__confirmed_at
+msgid "Confirmation Date"
+msgstr "تاريخ الاعتماد الرسمي"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request__rejection_reason
+msgid "Rejection Reason"
+msgstr "سبب الرفض"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request__missing_requirements_summary
+msgid "Pending Requirements"
+msgstr "المتطلبات المتبقية"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_attribute__sequence
+#: model:ir.model.fields,field_description:link_core.field_link_service_requirement__sequence
+#: model:ir.model.fields,field_description:link_core.field_link_service_price_rule__sequence
+#: model:ir.model.fields,field_description:link_core.field_link_quick_reply__sequence
+msgid "Sequence"
+msgstr "الترتيب"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_attribute__field_key
+msgid "Field Key"
+msgstr "المفتاح البرمجي (Field Key)"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_attribute__field_type
+msgid "Field Type"
+msgstr "نوع البيانات"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_attribute__selection_options
+msgid "Selection Options"
+msgstr "الخيارات المتاحة"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_attribute__is_required
+msgid "Required for Approval"
+msgstr "حقل إلزامي للاعتماد"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_attribute__help_text
+msgid "Customer / AI Prompt"
+msgstr "توجيه للعميل / الذكاء الاصطناعي"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_requirement__name
+msgid "Requirement / Document Name"
+msgstr "اسم المتطلب أو المستند"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_requirement__requirement_code
+msgid "Requirement Code"
+msgstr "الرمز البرمجي للمتطلب"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_requirement__requirement_type
+msgid "Requirement Type"
+msgstr "نوع المتطلب"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_requirement__is_mandatory
+msgid "Mandatory Before Approval?"
+msgstr "إلزامي قبل الاعتماد؟"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_requirement__instruction_prompt
+msgid "Customer WhatsApp Prompt"
+msgstr "تعليمات موجهة للعميل في واتساب"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_price_rule__name
+msgid "Pricing Rule Name"
+msgstr "اسم شرط التسعير"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_price_rule__rule_type
+msgid "Price Rule Type"
+msgstr "نوع قاعدة السعر"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_price_rule__amount
+msgid "Value / Amount / Rate"
+msgstr "القيمة / المبلغ / النسبة"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_price_rule__description
+msgid "Price Breakdown Description"
+msgstr "وصف يظهر في تفاصيل السعر"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_availability_rule__name
+msgid "Rule Description"
+msgstr "وصف قاعدة التوفر"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_availability_rule__rule_type
+msgid "Rule Type"
+msgstr "نوع القاعدة"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_availability_rule__date_from
+msgid "Date From"
+msgstr "من تاريخ"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_availability_rule__date_to
+msgid "Date To"
+msgstr "إلى تاريخ"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_availability_rule__max_capacity
+msgid "Max Available Capacity"
+msgstr "السعة القصوى المتاحة"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_availability_rule__note
+msgid "Availability Note / Reason"
+msgstr "ملاحظة التوفر / سبب عدم الإتاحة"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request_document__requirement_id
+msgid "Original Requirement"
+msgstr "المتطلب الأصلي"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request_document__name
+msgid "Document / Attachment Name"
+msgstr "اسم المستند / المرفق"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request_document__state
+msgid "Document Status"
+msgstr "حالة المستند"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request_document__attachment_id
+msgid "Odoo Attachment"
+msgstr "الملف المرفق في أودو"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_request_document__file_url
+msgid "Direct File URL"
+msgstr "رابط الملف المباشر"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_audit_log__request_id
+msgid "Associated Request"
+msgstr "الطلب المرتبط"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_audit_log__actor
+msgid "Actor"
+msgstr "الطرف المنفذ"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_audit_log__action
+msgid "Action Performed"
+msgstr "الإجراء المنفذ"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_service_audit_log__payload
+msgid "Payload Details (JSON / Context)"
+msgstr "البيانات والتفاصيل (JSON / Context)"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_quick_reply__name
+msgid "Rule / Reply Title"
+msgstr "عنوان الرد / القاعدة"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_quick_reply__trigger_keywords
+msgid "Trigger Keywords (Comma-separated)"
+msgstr "الكلمات المفتاحية (مفصولة بفاصلة)"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_quick_reply__response_text
+msgid "Automated Response Message"
+msgstr "نص الرد التلقائي الثابت"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_link_quick_reply__action_type
+msgid "Action Type"
+msgstr "الإجراء المنفذ"
+
+#. module: link_core
+#: model:ir.model.fields,field_description:link_core.field_res_users__tenant_id
+msgid "Assigned Business (Tenant)"
+msgstr "النشاط التجاري المرتبط (Tenant)"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_tenant__state__draft
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_catalog__state__draft
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_request__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_tenant__state__active
+msgid "Active"
+msgstr "نشط ومفعل"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_tenant__state__suspended
+msgid "Suspended"
+msgstr "موقوف مؤقتاً"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_tenant__business_category__travel
+msgid "Travel & Tourism"
+msgstr "سياحة وسفر"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_tenant__business_category__clinic
+msgid "Clinics & Aesthetics"
+msgstr "عيادات ومراكز تجميل"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_tenant__business_category__rental
+msgid "Car & Real Estate Rental"
+msgstr "تأجير سيارات وعقارات"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_tenant__business_category__consulting
+msgid "Consulting & Professional Services"
+msgstr "استشارات وخدمات مهنية"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_tenant__business_category__maintenance
+msgid "Maintenance & Spare Parts"
+msgstr "صيانة وقطع غيار"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_tenant__business_category__other
+msgid "Other Businesses"
+msgstr "أنشطة أخرى"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_tenant__bot_mode__hybrid
+msgid "Hybrid Mode (Interactive Welcome + Buttons + Smart AI)"
+msgstr "نمط هجين (ترحيب تفاعلي + أزرار + استفسار ذكي)"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_tenant__bot_mode__ai_only
+msgid "AI Agent Only"
+msgstr "ذكاء اصطناعي فقط"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_tenant__bot_mode__rules_only
+msgid "Automated Rules & Menus Only"
+msgstr "ردود وقوائم تلقائية ثابتة فقط"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_tenant__ai_provider__built_in
+msgid "Advanced Built-in Smart Engine (No Cost)"
+msgstr "المحرك الذكي الداخلي المتطور (بدون تكلفة)"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_catalog__state__active
+msgid "Published & Active"
+msgstr "منشور ونشط"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_catalog__state__archived
+msgid "Archived"
+msgstr "مؤرشف"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_catalog__pricing_type__fixed
+msgid "Fixed Price"
+msgstr "سعر ثابت محدد"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_catalog__pricing_type__per_person
+msgid "Per Person Price"
+msgstr "سعر للفرد"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_catalog__pricing_type__per_day
+msgid "Per Day / Duration Price"
+msgstr "سعر لليوم الواحد / المدة"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_catalog__pricing_type__custom
+msgid "Custom Rule Formula"
+msgstr "حساب مركب وفق الشروط"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_request__state__collecting_info
+msgid "Collecting Information"
+msgstr "استكمال البيانات"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_request__state__collecting_docs
+msgid "Collecting Documents"
+msgstr "استلام المستندات"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_request__state__pending_review
+msgid "Ready for Review & Approval"
+msgstr "جاهز للمراجعة والاعتماد"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_request__state__confirmed
+msgid "Confirmed & Approved"
+msgstr "معتمد ومؤكد"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_request__state__completed
+msgid "Completed"
+msgstr "مكتمل ومنفذ"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_request__state__rejected
+msgid "Rejected"
+msgstr "مرفوض"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_request__state__cancelled
+msgid "Cancelled"
+msgstr "ملغي"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_attribute__field_type__char
+msgid "Single Line Text"
+msgstr "نص قصير"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_attribute__field_type__integer
+msgid "Integer Number"
+msgstr "عدد صحيح"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_attribute__field_type__float
+msgid "Decimal / Amount"
+msgstr "رقم عشري / مبلغ"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_attribute__field_type__date
+msgid "Date"
+msgstr "تاريخ"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_attribute__field_type__selection
+msgid "Selection Options"
+msgstr "قائمة خيارات محددة"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_attribute__field_type__boolean
+msgid "Yes / No (Boolean)"
+msgstr "نعم / لا"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_requirement__requirement_type__document_image
+msgid "Document Image (ID / Passport / Receipt)"
+msgstr "صورة مستند (هوية / جواز / إيصال)"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_requirement__requirement_type__document_pdf
+msgid "Official PDF Document"
+msgstr "ملف PDF رسمي"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_requirement__requirement_type__text_field
+msgid "Additional Information"
+msgstr "بيانات إضافية"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_requirement__requirement_type__consent_checkbox
+msgid "Terms & Conditions Consent"
+msgstr "إقرار وموافقة على الشروط"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_price_rule__rule_type__extra_person
+msgid "Charge per Additional Person"
+msgstr "إضافة مبلغ لكل فرد إضافي"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_price_rule__rule_type__per_day
+msgid "Daily / Duration Rate"
+msgstr "حساب يومي / مدة"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_price_rule__rule_type__addon_fixed
+msgid "Fixed Add-on / Package"
+msgstr "إضافة خيار أو باقة محددة"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_price_rule__rule_type__discount_percentage
+msgid "Percentage Discount"
+msgstr "خصم بنسبة مئوية"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_availability_rule__rule_type__blackout_dates
+msgid "Blackout Dates (Holidays / Maintenance / Sold Out)"
+msgstr "حظر تواريخ معينة (إجازات / صيانة / عدم توفر)"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_availability_rule__rule_type__capacity_limit
+msgid "Capacity Limit per Date"
+msgstr "تحديد سعة قصوى للتاريخ"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_availability_rule__rule_type__weekday_restriction
+msgid "Weekday Restrictions"
+msgstr "أيام عمل محددة في الأسبوع"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_request_document__state__missing
+msgid "Missing / Required"
+msgstr "مطلوب ولم يُرفع بعد"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_request_document__state__received
+msgid "Received / Pending Review"
+msgstr "تم الاستلام بانتظار المراجعة"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_request_document__state__approved
+msgid "Approved & Valid"
+msgstr "معتمد وصحيح"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_request_document__state__rejected
+msgid "Rejected / Re-upload Needed"
+msgstr "مرفوض ويحتاج إعادة رفع"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_audit_log__actor__ai
+msgid "AI Assistant (Dify / AI)"
+msgstr "المساعد الذكي (AI)"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_audit_log__actor__customer
+msgid "Customer (WhatsApp)"
+msgstr "العميل (WhatsApp)"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_audit_log__actor__merchant
+msgid "Merchant / Agent (Dashboard)"
+msgstr "التاجر / الموظف"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_service_audit_log__actor__system
+msgid "System (Middleware / Odoo)"
+msgstr "النظام (Odoo)"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_quick_reply__action_type__text
+msgid "Send Fixed Response Only"
+msgstr "إرسال النص الثابت فقط"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_quick_reply__action_type__send_catalog
+msgid "Send Available Offers & Catalog"
+msgstr "إرسال دليل العروض والخدمات المتاحة"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_quick_reply__action_type__handoff_ai
+msgid "Route Conversation to AI Agent"
+msgstr "تحويل المحادثة للذكاء الاصطناعي"
+
+#. module: link_core
+#: model:ir.model.fields.selection,name:link_core.selection__link_quick_reply__action_type__handoff_human
+msgid "Route Conversation to Human Agent"
+msgstr "تحويل المحادثة لموظف بشري"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_tenant_list
+#: model:ir.actions.act_window,name:link_core.action_link_tenant
+msgid "Tenants & Businesses"
+msgstr "الأنشطة التجارية والمستأجرين"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_tenant_form
+msgid "Tenant Profile"
+msgstr "بيانات النشاط التجاري (Tenant)"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_tenant_form
+msgid "Activate Tenant"
+msgstr "تفعيل النشاط"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_tenant_form
+msgid "Suspend Tenant"
+msgstr "إيقاف مؤقت"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_tenant_form
+msgid "General Information"
+msgstr "البيانات العامة"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_tenant_form
+msgid "Response Mode & Channels"
+msgstr "نمط الرد وقنوات الذكاء الاصطناعي"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_tenant_form
+msgid "Welcome Message & Buttons"
+msgstr "رسالة الترحيب والأزرار التفاعلية"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_tenant_form
+msgid "First Welcome Message to Customer"
+msgstr "رسالة الترحيب الأولى للعميل"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_tenant_form
+msgid "Default Quick Buttons"
+msgstr "الأزرار السريعة الافتراضية"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_tenant_form
+msgid "AI Knowledge Base & Training"
+msgstr "تدريب الذكاء الاصطناعي وقاعدة المعرفة"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_tenant_form
+msgid "AI Engine & Model Configuration"
+msgstr "إعدادات المحرك والنموذج"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_tenant_form
+msgid "Agent Persona & Tone"
+msgstr "شخصية وأسلوب الموظف البشري"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_tenant_form
+msgid "Business Knowledge & FAQs"
+msgstr "ملفات وبيانات النشاط التجاري لتدريب الذكاء"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_tenant_form
+msgid "Technical Integrations (OpenWA & AI)"
+msgstr "إعدادات الربط التقني (OpenWA & AI)"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_tenant_form
+msgid "OpenWA Gateway (WhatsApp Gateway)"
+msgstr "بوابة OpenWA (WhatsApp Gateway)"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_tenant_form
+msgid "Chatwoot & Dify Integration"
+msgstr "ربط Chatwoot & Dify"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_catalog_list
+#: model:ir.ui.view,arch_db:link_core.view_link_service_catalog_form
+msgid "Service Catalog"
+msgstr "دليل الخدمات"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_catalog_form
+msgid "Service Details"
+msgstr "تفاصيل الخدمة"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_catalog_form
+msgid "Business & Category"
+msgstr "النشاط والتصنيف"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_catalog_form
+msgid "Official Deterministic Pricing"
+msgstr "التسعير الرسمي (حتمي وبدون تخمين)"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_catalog_form
+msgid "Detailed Description & Policies (AI Knowledge & RAG)"
+msgstr "الوصف التفصيلي والسياسات (لتغذية الـ AI & RAG)"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_catalog_form
+msgid "Price Calculation Rules & Add-ons"
+msgstr "قواعد حساب الأسعار والإضافات"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_request_list
+msgid "Chat & Service Requests"
+msgstr "طلبات المحادثات والخدمات"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_request_list
+msgid "Request Date"
+msgstr "تاريخ الطلب"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_request_form
+msgid "Service Request Card"
+msgstr "بطاقة طلب الخدمة"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_request_form
+msgid "Approve Request & Notify"
+msgstr "اعتماد الطلب وإشعار العميل"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_request_form
+msgid "Complete Request"
+msgstr "إتمام وتنفيذ الطلب"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_request_form
+msgid "Reject Request"
+msgstr "رفض الطلب"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_request_form
+msgid "Customer & Conversation Details"
+msgstr "بيانات العميل والمحادثة"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_request_form
+msgid "Service & Financial Details"
+msgstr "تفاصيل الخدمة والمالية"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_request_form
+msgid "Mandatory Documents & Attachments"
+msgstr "المستندات والمرفقات الرسمية"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_request_form
+msgid "Approve Document"
+msgstr "اعتماد المرفق"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_request_form
+msgid "Reject"
+msgstr "رفض"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_request_form
+msgid "AI & System Audit Logs"
+msgstr "سجل تدقيق الذكاء الاصطناعي (AI & System Logs)"
+
+#. module: link_core
+#: model:ir.ui.view,arch_db:link_core.view_link_service_request_form
+msgid "Timestamp"
+msgstr "التوقيت"
+
+#. module: link_core
+#: code:addons/link_core/models/link_service_request.py:0
+#, python-format
+msgid "New Request"
+msgstr "طلب جديد"
+
+#. module: link_core
+#: code:addons/link_core/models/link_service_request.py:0
+#, python-format
+msgid "All requirements completed"
+msgstr "جميع المتطلبات مكتملة"
+
+#. module: link_core
+#: code:addons/link_core/models/link_service_request.py:0
+#, python-format
+msgid "Tenant does not exist."
+msgstr "النشاط التجاري غير موجود."
+
+#. module: link_core
+#: code:addons/link_core/models/link_service_request.py:0
+#, python-format
+msgid "Requested service is not available."
+msgstr "الخدمة المطلوبة غير متوفرة."
+
+#. module: link_core
+#: code:addons/link_core/models/link_service_request.py:0
+#, python-format
+msgid "Additional Attachment"
+msgstr "مرفق إضافي"
+
+#. module: link_core
+#: code:addons/link_core/models/link_service_request.py:0
+#, python-format
+msgid "Please specify %s"
+msgstr "يرجى تحديد %s"
+
+#. module: link_core
+#: code:addons/link_core/models/link_service_request.py:0
+#, python-format
+msgid "Please send a copy of %s"
+msgstr "يرجى إرسال صورة %s"
+
+#. module: link_core
+#: code:addons/link_core/models/link_service_request.py:0
+#, python-format
+msgid "Cannot approve request: %s"
+msgstr "تعذر اعتماد الطلب: %s"
+
+#. module: link_core
+#: code:addons/link_core/models/link_service_request_document.py:0
+#, python-format
+msgid "Document is not clear or illegible"
+msgstr "المستند غير واضح أو غير مقروء"
+
+#. module: link_core
+#: code:addons/link_core/models/link_service_catalog.py:0
+#, python-format
+msgid "Service is currently inactive in the system."
+msgstr "الخدمة غير مفعلة حالياً في النظام."
+
+#. module: link_core
+#: code:addons/link_core/models/link_service_catalog.py:0
+#, python-format
+msgid "Selected date is currently not available for booking."
+msgstr "التاريخ المحدد غير متاح للحجز حالياً."
+
+#. module: link_core
+#: code:addons/link_core/models/link_service_catalog.py:0
+#, python-format
+msgid "Service is available and ready for booking."
+msgstr "الخدمة متاحة وجاهزة للحجز."
+
+#. module: link_core
+#: code:addons/link_core/models/link_service_catalog.py:0
+#, python-format
+msgid "Base Price"
+msgstr "السعر الأساسي"
+
+#. module: link_core
+#: code:addons/link_core/models/link_service_catalog.py:0
+#, python-format
+msgid "Price for %s Persons"
+msgstr "سعر لعدد %s أفراد"
+
+#. module: link_core
+#: code:addons/link_core/models/link_service_catalog.py:0
+#, python-format
+msgid "Price for %s Days"
+msgstr "سعر لعدد %s أيام"
+
+#. module: link_core
+#: code:addons/link_core/models/link_service_catalog.py:0
+#, python-format
+msgid "Extra Persons (%s)"
+msgstr "إضافي أفراد (%s)"

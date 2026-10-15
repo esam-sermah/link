@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_link_tenant_list" model="ir.ui.view">
+        <field name="name">link.tenant.list</field>
+        <field name="model">link.tenant</field>
+        <field name="arch" type="xml">
+            <list string="Tenants &amp; Businesses">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="business_category"/>
+                <field name="phone"/>
+                <field name="service_count"/>
+                <field name="request_count"/>
+                <field name="state" widget="badge" decoration-success="state == 'active'" decoration-warning="state == 'draft'" decoration-danger="state == 'suspended'"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_link_tenant_form" model="ir.ui.view">
+        <field name="name">link.tenant.form</field>
+        <field name="model">link.tenant</field>
+        <field name="arch" type="xml">
+            <form string="Tenant Profile">
+                <header>
+                    <button name="action_activate" string="Activate Tenant" type="object" class="oe_highlight" invisible="state == 'active'"/>
+                    <button name="action_suspend" string="Suspend Tenant" type="object" invisible="state == 'suspended'"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,active,suspended"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" string="Business Name"/>
+                        <h1>
+                            <field name="name" placeholder="e.g. Luxury Travel &amp; Tourism"/>
+                        </h1>
+                        <label for="code" string="Unique Identifier (Slug)"/>
+                        <h3>
+                            <field name="code" placeholder="al-fakhamah-travel"/>
+                        </h3>
+                    </div>
+                    <group>
+                        <group string="General Information">
+                            <field name="business_category"/>
+                            <field name="phone" placeholder="+9665xxxxxxxx"/>
+                            <field name="currency_id"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                        <group string="Response Mode &amp; Channels">
+                            <field name="bot_mode" widget="radio"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Welcome Message &amp; Buttons" name="welcome_settings">
+                            <group string="First Welcome Message to Customer">
+                                <field name="welcome_message" placeholder="Write the welcome message displayed on first contact..."/>
+                            </group>
+                            <group string="Default Quick Buttons">
+                                <field name="welcome_button_1"/>
+                                <field name="welcome_button_2"/>
+                                <field name="welcome_button_3"/>
+                            </group>
+                        </page>
+                        <page string="Quick Replies &amp; Rules" name="quick_replies">
+                            <field name="quick_reply_ids">
+                                <list editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="name"/>
+                                    <field name="trigger_keywords"/>
+                                    <field name="action_type"/>
+                                    <field name="response_text"/>
+                                    <field name="active"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Service Catalog" name="catalog">
+                            <field name="catalog_ids" readonly="1">
+                                <list>
+                                    <field name="name"/>
+                                    <field name="code"/>
+                                    <field name="pricing_type"/>
+                                    <field name="base_price"/>
+                                    <field name="state" widget="badge" decoration-success="state == 'active'"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Customer Requests" name="requests">
+                            <field name="request_ids" readonly="1">
+                                <list>
+                                    <field name="name"/>
+                                    <field name="partner_id"/>
+                                    <field name="service_id"/>
+                                    <field name="total_price"/>
+                                    <field name="state" widget="badge"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Authorized Users" name="users" groups="link_core.group_link_manager">
+                            <field name="user_ids">
+                                <list>
+                                    <field name="name"/>
+                                    <field name="login"/>
+                                    <field name="email"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="AI Knowledge Base &amp; Training" name="ai_knowledge">
+                            <group string="AI Engine &amp; Model Configuration">
+                                <field name="ai_provider"/>
+                                <field name="ai_model" invisible="ai_provider == 'built_in'"/>
+                                <field name="ai_api_key" password="True" invisible="ai_provider == 'built_in'"/>
+                            </group>
+                            <group string="Agent Persona &amp; Tone">
+                                <field name="ai_system_prompt" placeholder="Define instructions for the agent response style..."/>
+                            </group>
+                            <group string="Business Knowledge &amp; FAQs">
+                                <field name="ai_knowledge_base" placeholder="Enter details of services, prices, hotels, terms, and FAQs..."/>
+                            </group>
+                        </page>
+                        <page string="Technical Integrations (OpenWA &amp; AI)" name="technical_settings">
+                            <group string="OpenWA Gateway (WhatsApp Gateway)">
+                                <field name="openwa_session_id"/>
+                                <field name="openwa_api_url"/>
+                                <field name="openwa_api_key" password="True"/>
+                            </group>
+                            <group string="Chatwoot &amp; Dify Integration">
+                                <field name="chatwoot_account_id"/>
+                                <field name="chatwoot_inbox_id"/>
+                                <field name="dify_app_id"/>
+                                <field name="dify_dataset_id"/>
+                                <field name="webhook_secret" readonly="1"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_link_tenant" model="ir.actions.act_window">
+        <field name="name">Tenants &amp; Businesses</field>
+        <field name="res_model">link.tenant</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

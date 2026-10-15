@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة LINK | محاكي محادثات الواتساب والأوامر الذكية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- الشريط الجانبي لقائمة المحادثات -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-avatar">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="header-info">
+                    <h2>منصة LINK للتجارة الذكية</h2>
+                    <span class="badge-online"><i class="fa-solid fa-circle"></i> متصل بـ Odoo 20 &amp; OpenWA</span>
+                </div>
+            </div>
+
+            <!-- بطاقة التاجر المربوط -->
+            <div class="tenant-selector-card">
+                <label><i class="fa-solid fa-store"></i> المتجر / النشاط التجاري:</label>
+                <div class="tenant-badge">
+                    <span class="tenant-name" id="tenantName">مكتب الفخامة للسياحة والسفر</span>
+                    <span class="tenant-code">Slug: al-fakhamah-travel</span>
+                </div>
+            </div>
+
+            <!-- قائمة جهات الاتصال للاختبار -->
+            <div class="contacts-list">
+                <div class="contact-item active" onclick="selectContact('+966509988776', 'سعد العتيبي')">
+                    <div class="contact-avatar">س</div>
+                    <div class="contact-details">
+                        <div class="contact-title">
+                            <h4>سعد العتيبي</h4>
+                            <span class="time">الآن</span>
+                        </div>
+                        <p class="last-msg" id="contactLastMsg">+966509988776</p>
+                    </div>
+                    <span class="badge-status" id="contactBadge">طلب نشط</span>
+                </div>
+                <div class="contact-item" onclick="selectContact('+966551122334', 'أحمد السالم')">
+                    <div class="contact-avatar">أ</div>
+                    <div class="contact-details">
+                        <div class="contact-title">
+                            <h4>أحمد السالم</h4>
+                            <span class="time">10:45</span>
+                        </div>
+                        <p class="last-msg">+966551122334</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- أدوات مساعدة للاختبار السريع -->
+            <div class="sidebar-footer">
+                <button class="btn-tool" onclick="resetChat()"><i class="fa-solid fa-rotate-right"></i> إعادة ضبط المحادثة</button>
+                <a href="http://localhost:8020" target="_blank" class="btn-odoo-link"><i class="fa-solid fa-up-right-from-square"></i> فتح لوحة Odoo 20</a>
+            </div>
+        </aside>
+
+        <!-- منطقة الشات والمحادثة (WhatsApp Interface) -->
+        <main class="chat-area">
+            <header class="chat-header">
+                <div class="chat-user-meta">
+                    <div class="chat-avatar" id="currentAvatar">س</div>
+                    <div>
+                        <h3 id="currentContactName">سعد العتيبي</h3>
+                        <span class="user-phone" id="currentContactPhone">+966509988776</span>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <span class="mode-tag"><i class="fa-solid fa-robot"></i> النمط: هجين (أزرار + AI)</span>
+                </div>
+            </header>
+
+            <!-- صندوق الرسائل الحية -->
+            <div class="messages-container" id="messagesContainer">
+                <!-- الرسائل يتم توليدها ديناميكياً هنا -->
+            </div>
+
+            <!-- أزرار المحاكاة السريعة (Quick Actions) -->
+            <div class="quick-sim-bar">
+                <button class="sim-btn" onclick="sendQuickText('مرحبا')"><i class="fa-solid fa-hand"></i> إرسال تحية (مرحبا)</button>
+                <button class="sim-btn" onclick="sendQuickText('أريد حجز بكج البوسنة العائلي لـ 3 أفراد')"><i class="fa-solid fa-plane"></i> طلب حجز رحلة</button>
+                <button class="sim-btn btn-doc" onclick="simulateUploadDoc()"><i class="fa-solid fa-passport"></i> محاكاة إرسال صورة الجواز</button>
+                <button class="sim-btn btn-approve" onclick="simulateApprove()"><i class="fa-solid fa-circle-check"></i> اعتماد الطلب فوراً</button>
+            </div>
+
+            <!-- إدخال الرسالة وإرسالها -->
+            <div class="chat-input-bar">
+                <button class="input-icon-btn" onclick="simulateUploadDoc()" title="إرفاق صورة أو مستند"><i class="fa-solid fa-paperclip"></i></button>
+                <input type="text" id="messageInput" placeholder="اكتب رسالتك على واتساب..." onkeypress="handleKeyPress(event)">
+                <button class="send-btn" id="sendBtn" onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </main>
+
+        <!-- لوحة فحص حالة الطلب في Odoo 20 (Inspector) -->
+        <aside class="order-inspector">
+            <div class="inspector-header">
+                <h3><i class="fa-solid fa-receipt"></i> متابعة الطلب في Odoo 20</h3>
+            </div>
+            <div class="inspector-content">
+                <div class="order-card" id="orderCard">
+                    <div class="order-card-header">
+                        <span class="order-label">رقم الطلب:</span>
+                        <strong class="order-id" id="dispOrderNumber">REQ/2026/00001</strong>
+                    </div>
+                    <div class="status-tracker">
+                        <label>مرحلة الطلب (State):</label>
+                        <div class="status-pill status-review" id="dispOrderState">بانتظار المراجعة والاعتماد</div>
+                    </div>
+                    <div class="info-row">
+                        <span>الخدمة:</span>
+                        <strong>بكج البوسنة العائلي 7 أيام</strong>
+                    </div>
+                    <div class="info-row">
+                        <span>إجمالي القيمة:</span>
+                        <strong class="price-val" id="dispOrderPrice">8,000 ريال</strong>
+                    </div>
+                    <div class="docs-section">
+                        <h4>المستندات المطلوبة:</h4>
+                        <div class="doc-badge success" id="dispDocStatus">
+                            <i class="fa-solid fa-check-circle"></i> صورة جواز السفر (تم الاستلام)
+                        </div>
+                    </div>
+                    <div class="inspector-actions">
+                        <button class="btn-approve-big" onclick="simulateApprove()"><i class="fa-solid fa-signature"></i> اعتماد الطلب وإرسال رسالة التأكيد</button>
+                    </div>
+                </div>
+
+                <div class="openwa-status-box">
+                    <h4><i class="fa-brands fa-whatsapp"></i> تكامل بوابة OpenWA</h4>
+                    <p>بوابة الواتساب مفتوحة المصدر جاهزة لاستقبال الرسائل عبر Webhook: <code>/webhook/openwa</code></p>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

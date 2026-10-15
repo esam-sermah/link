@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  # 1. قاعدة بيانات PostgreSQL
+  db:
+    image: postgres:16-alpine
+    container_name: link-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: odoo20
+      POSTGRES_USER: esam_odoo20
+      POSTGRES_PASSWORD: 123
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+
+  # 2. بوابة واتساب المفتوحة OpenWA
+  openwa:
+    image: openwa-openwa-api:latest
+    container_name: openwa-api
+    restart: always
+    ports:
+      - "2785:2785"
+    volumes:
+      - openwa_data:/app/data
+    environment:
+      - PORT=2785
+      - WA_POPUP=false
+
+  # 3. منصة Middleware والذكاء الاصطناعي و RAG
+  middleware:
+    build:
+      context: .
+      dockerfile: middleware/Dockerfile
+    container_name: link-middleware
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - ODOO_URL=http://odoo:8020
+      - OPENWA_URL=http://openwa:2785
+    depends_on:
+      - openwa
+
+volumes:
+  postgres_data:
+  openwa_data:

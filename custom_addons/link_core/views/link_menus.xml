@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- LINK Platform Root Menu -->
+    <menuitem id="menu_link_root"
+              name="LINK Platform"
+              sequence="10"
+              web_icon="link_core,static/description/icon.png"/>
+
+    <!-- Operations Menu -->
+    <menuitem id="menu_link_operations"
+              name="Operations"
+              parent="menu_link_root"
+              sequence="10"/>
+
+    <menuitem id="menu_link_service_request"
+              name="Chat Requests"
+              parent="menu_link_operations"
+              action="action_link_service_request"
+              sequence="10"/>
+
+    <!-- Catalog Menu -->
+    <menuitem id="menu_link_catalog_root"
+              name="Catalog"
+              parent="menu_link_root"
+              sequence="20"/>
+
+    <menuitem id="menu_link_service_catalog"
+              name="Services &amp; Offers"
+              parent="menu_link_catalog_root"
+              action="action_link_service_catalog"
+              sequence="10"/>
+
+    <!-- Configuration Menu (Platform Admin Only) -->
+    <menuitem id="menu_link_configuration"
+              name="Configuration"
+              parent="menu_link_root"
+              groups="link_core.group_link_manager"
+              sequence="100"/>
+
+    <menuitem id="menu_link_tenant"
+              name="Tenants"
+              parent="menu_link_configuration"
+              action="action_link_tenant"
+              groups="link_core.group_link_manager"
+              sequence="10"/>
+</odoo>
